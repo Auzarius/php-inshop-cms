@@ -1,0 +1,100 @@
+
+h1, h2 {
+	color: orange;
+}
+
+body {
+	margin-left: 20px;
+}
+
+form table tr td:first-child, form table tr td:first-child {
+	width: 150px;
+}
+
+#accordion {
+	width: 500px;
+	font-size: .7em;
+}
+
+table {
+	width: 500px;
+}
+
+textarea.fixed { 
+	height: 150px;
+	max-height: 150px;
+	width: 480px;
+	max-width: 480px;
+}
+
+.comet-notice {
+	display: block;
+	padding: 20px;
+	background-color: #9C27B0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	width: 45%;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}	
+
+/*
+@media screen and (orientation: portrait) {
+	#accordion {
+		width: 340px;
+		font-size: .7em;
+	}
+
+	table {
+		max-width: 340px;
+	}
+	
+	textarea.fixed {
+		height: 150px;
+	max-height: 150px;
+		width: 310px;
+	max-width: 310px;
+	}
+}
+
+@media screen and (max-height: 300px) and (orientation: landscape) {
+	#accordion {
+		width: 340px;
+		font-size: .7em;
+	}
+
+	table {
+		max-width: 340px;
+	}
+	
+	textarea.fixed {
+		height: 150px;
+	max-height: 150px;
+		width: 310px;
+	max-width: 310px;
+	}
+}
+*/
+.ui-accordion .ui-accordion-content {
+	font-size: 1em;
+	font-weight: normal;
+	text-decoration: none;
+	padding: .1em 1em 1em 1em;
+}
+
+.ui-accordion .ui-accordion-header {
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+form .table-style td {
+	width: 50%;
+	white-space: nowrap;
+}
+
+#sort th {
+	cursor: pointer;
+}

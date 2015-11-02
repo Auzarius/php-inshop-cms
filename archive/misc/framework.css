@@ -1,0 +1,395 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:500);
+
+@viewport {
+	width: auto;
+}
+
+html {
+	*background: #101010 url('http://auzarius.com/images/galaxies.jpg') fixed no-repeat center top;
+	*font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+	font-family: 'Raleway', sans-serif;
+	*font-family: 'Philosopher', sans-serif;
+}
+
+body {
+	margin:0;
+	padding:0;
+	padding-top: 70px;
+	width: 100%;
+}
+
+header {
+	top:0;
+	left:0;
+	height:60px;
+	background-color: rgba(10,10,10,.90);
+	position: fixed;
+	width: 100%;
+}
+
+header .pl-10 {
+	padding: 10px;
+	float: left;
+}
+
+header .pr-20 {
+	padding: 20px;
+	float: left;
+}
+
+header > nav > a {
+	float: left;
+}
+
+header > nav img {
+	float: left;
+	height: 40px;
+	padding: 0;
+	margin:0;
+	margin-top: -8px;
+}
+
+header > nav > ul > li > a {
+	color: inherit;
+	text-decoration: none;
+	padding: 17px 30px 17px 30px;
+}
+
+header > nav > ul > li > a:hover {
+	color: inherit;
+	text-decoration: none;
+	background-color: #1080b1;
+}
+
+@media screen and (max-width: 1240px) {
+	header > nav a#teamspeak { display: none; }
+	header > nav a#youtube { display: none; }
+}
+
+header > nav > ul.nav-left > li {
+	position: relative;
+	float: left;
+	list-style: none;
+	color: white;
+	padding: 10px 0px 10px 0px;
+	margin-top: -12px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header > nav > ul.nav-right > li {
+	float: right;
+	list-style: none;
+	color: white;
+	padding: 10px 0px 10px 0px;
+	margin-top: -12px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header > nav ul.dropdown-menu {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	z-index: 1;
+	left: 8px; top: 50px;
+	background: rgba(30,30,30,0.97);
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 300px;
+	border: 1px solid #111;
+	padding: 10px 0px 10px 0px;
+}
+
+header > nav > ul > li.dropdown > ul.dropdown-menu > li {
+	margin: 0; padding: 0;
+	clear: both;
+	width: 90%;
+	line-height: 3em;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 10px;
+}
+
+header > nav > ul > li.dropdown > ul.dropdown-menu > li > a {
+	width: 100%;
+	height: 100%;
+	color: #0080FF;
+	text-decoration: none;
+}
+
+header > nav > ul > li.dropdown > ul.dropdown-menu > li:hover > a {
+	color: white;
+	text-decoration: none;
+}
+
+header > nav > ul > li.dropdown > ul.dropdown-menu > li:hover {
+	background-color: rgba(0,160,255,0.5);
+	*background-color: #0080FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+	font-size: .85em;
+}
+
+.post {
+	border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.8);
+	
+}
+
+.post .body {
+	border-radius: 0px 0px 0px 0px;
+	border: 2px solid white;
+    margin: 2px auto;
+	margin-top: -4px;
+	margin-bottom: 2px;
+    padding: 10px;
+	background-color: rgba(50, 50, 50, 0.7);
+	min-width: 100px;
+	color: #01c2f1;
+	line-height: 1.6em;
+}
+
+.post p {
+	margin-bottom: 0px;
+    line-height: 1.6em;
+    color: #CCFF11; /* lime green */
+	padding: 10px;
+}
+
+.post div {
+	margin-bottom: 0px;
+    line-height: 1.6em;
+    color: #CCFF11; /* lime green */
+}
+
+.post .title {
+	border-radius: 10px 10px 0px 0px;
+	border: 2px solid white;
+    margin: 2px auto;
+	padding: 4px;
+	background-color: rgba(10, 10, 10, 0.7);
+	min-width: 750px;
+	color: white;
+	font-size: 2em;
+	text-indent: 8px;
+	font-variant: small-caps;
+}
+
+.post .sample a {
+	text-decoration: none;
+	color: white;
+}
+
+.post .sample a:hover {
+	text-decoration: underline;
+	color: #FF8000;
+}
+
+.post .sample {
+	border-radius: 10px;
+	border: 1px solid white;
+    margin: 3px auto;
+	padding: 4px;
+	background-color: rgba(10, 10, 10, 0.7);
+	min-width: 750px;
+	color: white;
+	font-size: 1.1em;
+	text-indent: 8px;
+	font-variant: small-caps;
+}
+
+.post .date {
+	float: right;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	padding-right: 2em;
+	margin-top: -2.1em;
+	color: #CCFF11;
+	font-variant: small-caps;
+	font-size: 1.1em;
+}
+	
+.post .footer {
+	border-radius: 0px 0px 10px 10px;
+	border: 2px solid white;
+    margin: 0px auto;
+	margin-top: -4px;
+	padding: 4px;
+	background-color: rgba(10, 10, 10, 0.7);
+	min-width: 750px;
+	color: #CCFF11;
+	text-indent: 8px;
+	font-variant: small-caps;
+}
+
+.post .participants .name a:hover {
+	cursor: pointer;
+}
+
+@media screen and (orientation: portrait) {
+	.post .body ul {
+	list-style: outside disc;
+	color: #FF8000; /* orange */
+	}
+
+	.post .body ul li {
+		padding-bottom: .5em;
+	}
+
+	.post .body ul>ul li {
+		list-style: outside square;
+		color: #0080FF; /* blue */
+	}
+
+	.post .body ul>ul>ul li {
+		list-style: outside lower-roman;
+		color: #CCFF11; /* lime green */
+	}
+}
+
+
+.table-bordered thead:first-child>tr:first-child>th:first-child, 
+.table-bordered thead:first-child>tr:first-child>td:first-child {
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;}
+	
+.table-bordered thead:first-child>tr:first-child>th:last-child, 
+.table-bordered thead:first-child>tr:first-child>td:last-child {
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+}
+
+.table-bordered tbody>tr>td.last{
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+}
+
+.table-bordered:not(#results) tbody:last-child>tr:last-child td:first-child {
+	border-radius: 0px 0px 0px 10px;
+	-moz-border-radius: 0px 0px 0px 10px;
+	-webkit-border-radius: 0px 0px 0px 10px;
+}
+
+.table-bordered tbody>tr:last-child>td:last-child {
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+}
+
+.table-striped tbody>tr:nth-child(odd)>td { 
+	background-color:#3b3b3b;
+}
+
+.table-striped tbody>tr:nth-child(even)>td { 
+	background-color:#303030;
+}
+
+.table-striped tbody tr td.color-fix-odd, 
+.table-hover.table-striped tbody>tr:hover>td.color-fix-odd {
+	color: white;
+	background-color:#3b3b3b;
+}
+
+.table-striped tbody>tr>td.color-fix-even, 
+.table-hover.table-striped tbody>tr:hover>td.color-fix-even {
+	color: white;
+	background-color:#303030;
+}
+
+.table-hover tbody>tr:hover td{
+	color: invert;
+	background-color: #FF8000;
+}
+
+table thead a:hover {
+	text-decoration: none;
+	color: #FF8000;
+}
+
+table thead tr .headerSortDown, table thead tr .headerSortUp {
+	background-color: #FF8000;
+}
+
+table thead tr th:active {
+	background-color: red;
+}
+
+table thead td, thead th  {
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
+table thead a {
+	text-decoration: underline;
+	color: black;
+}
+
+table th {
+	background-color: white;
+	color: black;
+	height: 20px;
+	padding: 8px 5px 8px 5px;
+	white-space: no-wrap;
+}
+
+table td img{
+	height: 16px;
+	width: 16px;
+	margin-left: -2px;
+	margin-bottom: -2px;
+	padding-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix {
+	clear: both;
+}
+
+.clear-right {
+	clear: left;
+}
+
+.clear-left {
+	clear: right;
+}
+
+.clearfix:before,.clearfix:after {
+	content: " ";
+	display: table;
+	}
+
+.clearfix:after {
+	clear: both;
+	}

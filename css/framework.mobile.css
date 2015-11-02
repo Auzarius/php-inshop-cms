@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500);
+
+@viewport {
+	width: auto;
+}
+
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+form .table-style td {
+	width: 100%;
+	white-space: nowrap;
+}
+
+p {
+	padding-left: 20px;
+}
+
+section {
+	font-size: 1em;
+}
+
+.inline-list li {
+	position: relative;
+	float: left;
+	list-style: none;
+	color: white;
+	margin-right: 7px;
+}
+
+.inline-list {
+	margin-left: -40px;
+}
+
+.button {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	padding: 5px 13px 5px 13px;
+	border: 0;
+}
+
+.button, .button a, .button a:visited {
+	color: rgb(180,225,250);
+	background-color: #01c2f1;
+	text-decoration: none;
+}
+
+.button:hover, .button a:hover {
+	color: rgb(250,250,250);
+	background-color: #37c8F2;
+	text-decoration: none;
+}
+
+.table-bordered thead:first-child>tr:first-child>th:first-child, 
+.table-bordered thead:first-child>tr:first-child>td:first-child {
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;}
+	
+.table-bordered thead:first-child>tr:first-child>th:last-child, 
+.table-bordered thead:first-child>tr:first-child>td:last-child {
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+}
+
+.table-bordered tbody>tr>td.last{
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+}
+
+.table-bordered:not(#results) tbody:last-child>tr:last-child td:first-child {
+	border-radius: 0px 0px 0px 10px;
+	-moz-border-radius: 0px 0px 0px 10px;
+	-webkit-border-radius: 0px 0px 0px 10px;
+}
+
+.table-bordered tbody>tr:last-child>td:last-child {
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+}
+
+.table-striped tbody>tr:nth-child(odd)>td { 
+	background-color:rgb(230,230,230);
+}
+
+.table-striped tbody>tr:nth-child(even)>td { 
+	background-color:rgb(210,210,210);
+}
+
+.table-hover tbody>tr:hover td{
+	color: white;
+	text-shadow: 1px black;
+	background-color: #FF8000; /* orange */
+}
+ 
+.table-style {
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.table-style td, .table-style th, .table-style tbody td {
+	padding: 5px 10px 5px 10px;
+	height: 40px;
+	min-width: 48%;
+	width: 49.5%;
+	overflow: hidden;
+}
+
+table.table-style {
+	width: 100%;
+	max-width: 100%;
+}
+
+h1, h2 {
+	color: orange;
+}
+
+form .table-style td {
+	width: 50%;
+	white-space: nowrap;
+}
+
+textarea.fixed { 
+	height: 150px;
+	max-height: 150px;
+	width: 480px;
+	max-width: 480px;
+}
+
+.search-results tbody tr td:first-child, .search-results thead tr th:first-child {
+	width: 50px;
+}
+
+.search-results td {
+	height: 35px;
+	white-space: nowrap;
+}
+	
+.clearfix {
+	clear: both;
+}
+
+.clear-right {
+	clear: left;
+}
+
+.clear-left {
+	clear: right;
+}
+
+.clearfix:before,.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.print-only {
+	display: none;
+}
+
+.hidden {
+	display: none!important;
+	visibility: hidden!important;
+}
+
+.error, .result {
+	padding: 5px 10px;
+	color: white;
+	border: 1px solid black;
+	-webkit-box-shadow: 3px 3px 3px #888888;
+	-moz-box-shadow: 3px 3px 3px #888888;
+	box-shadow: 3px 3px 3px #888888;
+	margin: 0 auto;
+	width: 19em;
+	max-width: 20em;
+	margin-left: 1em;
+	margin-top: 1em;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.error {
+	background-color: red;
+}
+
+.result {
+	background-color: green;
+}
+
+
+/* REFLOW TABLE */
+
+		/* These apply across all breakpoints because they are outside of a media query */
+		/* Make the labels light gray all caps across the board */
+		.mobile-table thead th,
+		.mobile-table tbody th .ui-table-cell-label,
+		.mobile-table tbody td .ui-table-cell-label {
+			text-transform: uppercase;
+			font-size: .7em;
+			color: rgba(0,0,0,0.5);
+			font-weight: normal;
+		}
+		/* White bg, large blue text for rank and title */
+		.mobile-table tbody th {
+			font-size: 1.2em;
+			background-color: #fff;
+			color: #77bbff;
+			text-align: center;
+		}
+		/*  Add a bit of extra left padding for the title */
+		.mobile-table tbody td.title {
+			*padding-left: .8em;
+			width: 100%;
+			text-align: center;
+		}
+		
+		.mobile-table tbody tr {
+			margin-top: 1em;
+		}
+		/* Add strokes */
+		.mobile-table thead th {
+			border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback */
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+		.mobile-table tbody th,
+		.mobile-table tbody td {
+			border-bottom: 1px solid #e6e6e6; /* non-RGBA fallback  */
+			border-bottom: 1px solid rgba(0,0,0,.05);
+		}
+		/*  Custom stacked styles for mobile sizes */
+		/*  Use a max-width media query so we don't have to undo these styles */
+		@media (max-width: 40em) {
+			/*  Negate the margin between sections */
+			.mobile-table tbody th {
+				margin-top: 0;
+				text-align: left;
+			}
+			/*  White bg, large blue text for rank and title */
+			.mobile-table tbody th,
+			.mobile-table tbody td.title {
+				display: block;
+				font-size: 1.2em;
+				line-height: 110%;
+				height: 100%;
+				padding: .5em .5em;
+				background-color: #fff;
+				color: #77bbff;
+				-moz-box-shadow: 0 1px 6px rgba(0,0,0,.1);
+				-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.1);
+				box-shadow: 0 1px 6px rgba(0,0,0,.1);
+			}
+			
+			/*  Position the title next to the rank, pad to the left */
+			.mobile-table tbody td.title {
+				margin-top: -2.1em;
+				*padding-left: 2.2em;
+				border-bottom: 1px solid rgba(0,0,0,.15);
+			}
+			/*  Make the data bold */
+			.mobile-table th,
+			.mobile-table td {
+				font-weight: bold;
+			}
+			
+			.mobile-table td {
+				font-size: 1.1em;
+				padding-left: 1em;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			/* Make the label elements a percentage width */
+			.mobile-table td .ui-table-cell-label,
+			.mobile-table th .ui-table-cell-label {
+				min-width: 20%;
+			}
+		}
+
+		/* Media query to show as a standard table at wider widths */
+		@media ( min-width: 40em ) {
+			/* Show the table header rows */
+			.mobile-table td,
+			.mobile-table th,
+			.mobile-table tbody th,
+			.mobile-table tbody td,
+			.mobile-table thead td,
+			.mobile-table thead th {
+				display: table-cell;
+				margin: 0;
+			}
+			/* Hide the labels in each cell */
+			.mobile-table td .ui-table-cell-label,
+			.mobile-table th .ui-table-cell-label {
+				display: none;
+			}
+		}
+		/* Hack to make IE9 and WP7.5 treat cells like block level elements */
+		/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this */
+		@media ( max-width: 40em ) {
+			.mobile-table td,
+			.mobile-table th {
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				float: left;
+				clear: left;
+			}
+		}
+		
+		.mobile-table tbody tr th {
+			line-height: 110%;
+			min-height: 100%;
+		}
